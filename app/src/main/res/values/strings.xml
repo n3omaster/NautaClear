@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NautaClear</string>
+    <string name="config">Configuración</string>
+    <string name="welcome_image">Welcome Image</string>
+    <string name="correo_nauta">Correo Nauta</string>
+    <string name="contrase_a_nauta">Contraseña Nauta</string>
+    <string name="configurar">Configurar</string>
+    <string name="configure_nauta">Configure sus credenciales del servidor de correo nauta.</string>
+    <string name="api_email">w2m@bachecubano.com</string>
+    <string name="almacenamiento">Almacenamiento:</string>
+
+    <string name="buzonUsage">%1$.02f MB</string>
+    <string name="emailsUsage">%1$d</string>
+    <string name="correos">Correos:</string>
+    <string name="limpiar_buzon">Limpiar buzón</string>
+    <string name="donacion_voluntaria">Donación Voluntaria</string>
+</resources>

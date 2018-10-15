@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/configureNautaImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/welcome_image"
+            android:src="@drawable/nauta_clear_logo" />
+
+        <TextView
+            android:id="@+id/configure_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/configureNautaImage"
+            android:layout_margin="20dp"
+            android:lines="3"
+            android:text="@string/configure_nauta"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nautaUsernameTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/configure_text"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorAccent"
+            app:counterMaxLength="16">
+
+            <EditText
+                android:id="@+id/nautaUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/configureNauta"
+                android:drawableRight="@drawable/nauta_username"
+                android:hint="@string/correo_nauta"
+                android:inputType="textEmailAddress|textAutoComplete"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/nauta_username" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nautaPasswordTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nautaUsernameTextInput"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorAccent"
+            app:counterMaxLength="16">
+
+            <EditText
+                android:id="@+id/nautaPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nautaUsername"
+                android:drawableRight="@drawable/nauta_password"
+                android:hint="@string/contrase_a_nauta"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/nauta_password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/configureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nautaPasswordTextInput"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:text="@string/configurar"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nautaPasswordTextInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</ScrollView>
